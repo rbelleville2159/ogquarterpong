@@ -1,0 +1,4 @@
+kind: wasmer.io/App.v0
+name: ogquarterpong
+owner: rbelleville2159
+package: .
