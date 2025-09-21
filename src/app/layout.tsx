@@ -4,9 +4,15 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const metadata = {
+      icons: {
+        icon: '/favicon.ico',
+      },
+    };
+
 export const metadata: Metadata = {
-  title: 'Quarter Pong',
-  description: 'Bounce. Compete. Eliminate.',
+  title: 'QuarterPong|Bounce.Compete.Eliminate.',
+  description: 'Best. Game. Ever.',
 }
 
 export default function RootLayout({
