@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 export const metadata: Metadata = {
-  title: 'QuarterPong|Bounce.Compete.Eliminate.',
+  title: "QuarterPong | Bounce. Compete. Eliminate.",
   description: 'Best. Game. Ever.',
 }
 
