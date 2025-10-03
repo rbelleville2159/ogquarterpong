@@ -1,4 +1,4 @@
-// src/app/rules/page.js
+// src/app/rules/page.tsx
 
 import React from 'react';
 
