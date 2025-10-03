@@ -27,7 +27,7 @@ const SiteHeader: React.FC = () => (
         <a href="/" className={`text-sm font-medium ${primaryTextColor} hover:${neonAccent} transition duration-150`}>Home</a>
         <a href="/rules" className={`text-sm font-medium ${neonAccent} border-b-2 border-cyan-400 pb-1`}>Rules</a>
         <a href="/store" className={`text-sm font-medium ${primaryTextColor} hover:${neonAccent} transition duration-150`}>Store</a>
-        <a href="/about" className={`text-sm font-medium ${primaryTextColor} hover:${neonAccent} transition duration-150`}>Contact Us</a>
+        <a href="/community" className={`text-sm font-medium ${primaryTextColor} hover:${neonAccent} transition duration-150`}>Community</a>
       </nav>
     </div>
   </header>
