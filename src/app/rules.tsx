@@ -1,4 +1,13 @@
-<div class="quarter-pong-rules">
+// app/rules/page.js
+
+export default function QuarterPongRulesPage() {
+  return (
+    <div className="quarter-pong-rules">
+      <h1>Quarter Pong – Official Rules & Game Modes</h1>
+      <hr />
+
+      <h2>&#9642; Objective</h2>
+      {<div class="quarter-pong-rules">
     <h1>Quarter Pong – Official Rules & Game Modes</h1>
 
     <hr>
@@ -99,3 +108,7 @@
         </ul>
     </section>
 </div>
+}
+    </div>
+  );
+}
