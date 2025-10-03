@@ -1,13 +1,13 @@
 // app/rules/page.tsx
-import styles from './page.module.css'; // Import the CSS module
+import styles from './page.module.css';
 
 /**
  * QuarterPongRulesPage Component
- * Displays the official rules and game modes for Quarter Pong.
+ * Displays the official rules and game modes for Quarter Pong with a dark theme.
  */
 export default function QuarterPongRulesPage() {
   return (
-    // Apply the class from the CSS module
+    // Apply the main container class from the CSS module
     <main className={styles.quarterPongRulesContainer}>
       <h1>Quarter Pong – Official Rules & Game Modes</h1>
       <hr />
@@ -42,7 +42,7 @@ export default function QuarterPongRulesPage() {
         <div>
           <h3>When a Ball is Eligible for Rebound (It's a "Live" Ball):</h3>
           <ul>
-            <li>It bounces off the cup, base, or lid (even if it deflects upward).</li>
+            <li>It bounces off the cup, base, or lid (even if it deflecting upward).</li>
             <li>It lands on the top surface of the lid/base.</li>
             <li>It misses everything and then hits the table or floor again.</li>
           </ul>
@@ -88,11 +88,11 @@ export default function QuarterPongRulesPage() {
 
       <hr />
 
-      <section className={styles.gameModes}> {/* Apply class for grid */}
+      <section className={styles.gameModes}>
         <h2>&#9642; Game Modes</h2>
 
         {/* Duel Mode */}
-        <div className={styles.modeCard}> {/* Apply class for card styling */}
+        <div className={styles.modeCard}>
           <h3>1. Duel Mode (1 vs. 1)</h3>
           <ul>
             <li>**Players:** 2</li>
