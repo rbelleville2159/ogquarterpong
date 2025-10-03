@@ -35,8 +35,7 @@ export default function Home() {
       <div className="grid w-full max-w-7xl grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-3 lg:text-left">
         
         {/* 1. Rules Link (Now using Pink Neon Highlight) */}
-        <a
-          href="/rules"
+        <a href="/rules"
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-pink-500 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.7)]`}
           target="_blank"
           rel="noopener noreferrer"
@@ -53,8 +52,7 @@ export default function Home() {
         </a>
 
         {/* 2. Store Link (Now using Cyan Neon Accent) */}
-        <a
-          href="/store"
+        <a href="/store"
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-cyan-400 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(45,212,255,0.7)]`}
         >
           <h2 className={`mb-3 text-3xl font-bold ${neonAccent} group-hover:text-white`}>
@@ -69,8 +67,7 @@ export default function Home() {
         </a>
 
         {/* 3. Contact/Community Link (Remains Pink Neon Highlight) */}
-        <a
-          href="/contact"
+        <a href="/contact"
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-pink-500 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.7)]`}
         >
           <h2 className={`mb-3 text-3xl font-bold ${neonHighlight} group-hover:text-white`}>
