@@ -2,12 +2,7 @@
 
 export default function QuarterPongRulesPage() {
   return (
-    <div className="quarter-pong-rules">
-      <h1>Quarter Pong – Official Rules & Game Modes</h1>
-      <hr />
-
-      <h2>&#9642; Objective</h2>
-      {<div class="quarter-pong-rules">
+<div classname="quarter-pong-rules">
     <h1>Quarter Pong – Official Rules & Game Modes</h1>
 
     <hr>
@@ -107,8 +102,6 @@ export default function QuarterPongRulesPage() {
             <li>**Optional Variation – Last Chance Rebound:** At the start of the next round, any previously eliminated player may attempt **one rebound shot**. If they make it, they rejoin the game. After that round, elimination proceeds as normal.</li>
         </ul>
     </section>
-</div>
-}
     </div>
   );
 }
