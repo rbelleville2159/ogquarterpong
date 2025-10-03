@@ -133,8 +133,8 @@ export default function QuarterPongRulesPage() {
             <ol className="space-y-4 list-none p-0">
               {/* Using custom list styling for steps */}
               {[
-                "Place the **raised base** in the center of the table.",
                 "Remove the cup from inside the base, close the lid, and place the **cup on top of the lid**.",
+                "Place the **raised base** in the center of the table.",
                 "Players stand **evenly spaced** around the table.",
                 "Each player starts with the required number of balls (which **varies by game mode**).",
                 "A round begins after a **3...2...1 countdown**. Once the countdown is over, all players may bounce at will.",
