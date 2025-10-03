@@ -1,4 +1,3 @@
-// app/rules/page.tsx
 import React from 'react';
 
 // Define common styles for enhanced readability and dark theme aesthetics
