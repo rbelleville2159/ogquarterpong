@@ -49,9 +49,3 @@ const SiteFooter: React.FC = () => (
     </div>
   </footer>
 );
-
-      {/* 3. Website Footer */}
-      <SiteFooter />
-    </div>
-  );
-}
