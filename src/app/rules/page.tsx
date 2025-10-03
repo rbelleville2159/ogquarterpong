@@ -1,5 +1,7 @@
-// app/rules/page.jsx
+// app/rules/page.tsx
+
 import React from 'react';
+
 import { BookOpen, Target, Box, RefreshCw, AlertTriangle, Users } from 'lucide-react';
 
 /**
