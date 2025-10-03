@@ -13,7 +13,7 @@ const dangerText = "text-red-500"; // Critical warning/elimination text
 /**
  * Global Navigation Header Component (Sticky)
  */
-const SiteHeader = () => (
+const SiteHeader: React.FC = () => (
   <header className={`sticky top-0 z-10 w-full ${cardBg} border-b border-gray-700 shadow-xl`}>
     <div className="max-w-7xl mx-auto flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
       <div className="flex items-center">
@@ -36,7 +36,7 @@ const SiteHeader = () => (
 /**
  * Global Footer Component
  */
-const SiteFooter = () => (
+const SiteFooter: React.FC = () => (
   <footer className={`w-full ${cardBg} border-t border-gray-700 mt-12`}>
     <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
       <p className="text-sm text-gray-400">
@@ -50,11 +50,49 @@ const SiteFooter = () => (
   </footer>
 );
 
+// Define interface for the GameModeCard props
+interface GameModeCardProps {
+  mode: string;
+  players: string;
+  balls: string;
+  rules: string[];
+  accent: string;
+}
+
+/**
+ * GameModeCard Component for reusable mode display
+ */
+const GameModeCard: React.FC<GameModeCardProps> = ({ mode, players, balls, rules, accent }) => (
+    <div className={`p-6 rounded-xl ${cardBg} shadow-2xl transition duration-300 hover:scale-[1.02] hover:shadow-cyan-400/30 border-t-4 border-b-4 border-transparent hover:border-cyan-400`}>
+        <h3 className={`text-2xl font-extrabold mb-4 uppercase ${accent}`}>
+            {mode}
+        </h3>
+        
+        <div className="text-sm text-gray-400 mb-4 space-y-1">
+            <p><span className="font-semibold text-white">Players:</span> {players}</p>
+            <p><span className="font-semibold text-white">Starting Balls:</span> {balls}</p>
+        </div>
+
+        <ul className="list-none space-y-3 pt-3 border-t border-gray-700">
+            {rules.map((rule, index) => (
+                <li key={index} className="flex items-start text-gray-300">
+                    <span className={`text-lg leading-none mr-2 ${accent}`}>&raquo;</span>
+                    <span dangerouslySetInnerHTML={{ 
+                        __html: rule.replace(/\*\*(.*?)\*\*/g, `<span class="font-bold ${accent} block sm:inline">$1</span>`) 
+                    }} />
+                </li>
+            ))}
+        </ul>
+    </div>
+);
+
+
 // --- Main Page Component ---
 
 /**
  * QuarterPongRulesPage Component
  * Displays the official rules and game modes with a high-contrast dark theme.
+ * This component acts as the default export for the Next.js /rules route.
  */
 export default function QuarterPongRulesPage() {
   return (
@@ -177,7 +215,7 @@ export default function QuarterPongRulesPage() {
               If a player **knocks over the cup or base**, they are <span className={`font-extrabold ${dangerText}`}>immediately eliminated</span>.
             </p>
             <div className="bg-gray-700 p-3 rounded text-gray-300 text-sm italic">
-              <p>The remaining Players advance to the next round and the Person that knocked over the cup is shunned.</p>
+              <p>The Round resets. The eliminated player is shunned.</p>
             </div>
           </section>
 
@@ -238,30 +276,3 @@ export default function QuarterPongRulesPage() {
     </div>
   );
 }
-
-/**
- * GameModeCard Component for reusable mode display
- */
-const GameModeCard = ({ mode, players, balls, rules, accent }) => (
-    <div className={`p-6 rounded-xl ${cardBg} shadow-2xl transition duration-300 hover:scale-[1.02] hover:shadow-cyan-400/30 border-t-4 border-b-4 border-transparent hover:border-cyan-400`}>
-        <h3 className={`text-2xl font-extrabold mb-4 uppercase ${accent}`}>
-            {mode}
-        </h3>
-        
-        <div className="text-sm text-gray-400 mb-4 space-y-1">
-            <p><span className="font-semibold text-white">Players:</span> {players}</p>
-            <p><span className="font-semibold text-white">Starting Balls:</span> {balls}</p>
-        </div>
-
-        <ul className="list-none space-y-3 pt-3 border-t border-gray-700">
-            {rules.map((rule, index) => (
-                <li key={index} className="flex items-start text-gray-300">
-                    <span className={`text-lg leading-none mr-2 ${accent}`}>&raquo;</span>
-                    <span dangerouslySetInnerHTML={{ 
-                        __html: rule.replace(/\*\*(.*?)\*\*/g, `<span class="font-bold ${accent} block sm:inline">$1</span>`) 
-                    }} />
-                </li>
-            ))}
-        </ul>
-    </div>
-);
