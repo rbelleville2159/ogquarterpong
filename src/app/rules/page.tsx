@@ -12,6 +12,7 @@ import { BookOpen, Target, Box, RefreshCw, AlertTriangle, Users } from 'lucide-r
  * the function name should be renamed to 'default function Page()' or similar, 
  * but for a general reusable component, 'App' is used here.
  */
+
 export default function QuarterPongRulesPage() {
   
   // Helper component to render the main rule section header
