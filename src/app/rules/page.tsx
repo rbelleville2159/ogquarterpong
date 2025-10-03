@@ -7,12 +7,12 @@ export default function QuarterPongRulesPage() {
 <div className="quarter-pong-rules">
     <h1>Quarter Pong – Official Rules & Game Modes</h1>
 
-    <hr>
+    <hr />
 
     <h2>&#9642; Objective</h2>
     <p>The goal is to **bounce your ball into the raised cup** each round. When all balls are made, any player who did not score is **eliminated**. The **last player standing wins!**</p>
 
-    <hr>
+    <hr />
 
     <h2>&#9642; Setup</h2>
     <ol>
@@ -23,7 +23,7 @@ export default function QuarterPongRulesPage() {
         <li>A round begins after a **3...2...1 countdown**. Once the countdown is over, all players may bounce at will.</li>
     </ol>
 
-    <hr>
+    <hr />
 
     <h2>&#9642; Rebounds (Default Rule)</h2>
     <p>If a player misses a shot, any **active player** can grab the ball and take a rebound shot. The rules for grabbing a ball differ slightly by game mode.</p>
@@ -62,13 +62,13 @@ export default function QuarterPongRulesPage() {
         </ul>
     </section>
 
-    <hr>
+    <hr />
 
     <h2>&#9642; Penalty Rule</h2>
     <p>If a player **knocks over the cup or base**, they are **immediately eliminated**.</p>
     <p>The game then pauses to reset the cup. Players keep any balls they still have in hand. Any balls that are not accounted for are placed on the lid nearest the eliminated player for the restart.</p>
 
-    <hr>
+    <hr />
 
     <h2>&#9642; Game Modes</h2>
 
