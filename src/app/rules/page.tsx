@@ -1,4 +1,5 @@
 // app/rules/page.tsx
+import styles from './page.module.css'; // Import the CSS module
 
 /**
  * QuarterPongRulesPage Component
@@ -6,8 +7,8 @@
  */
 export default function QuarterPongRulesPage() {
   return (
-    // Use a main container with a semantic class for styling
-    <main className="quarter-pong-rules-container">
+    // Apply the class from the CSS module
+    <main className={styles.quarterPongRulesContainer}>
       <h1>Quarter Pong – Official Rules & Game Modes</h1>
       <hr />
 
@@ -87,11 +88,11 @@ export default function QuarterPongRulesPage() {
 
       <hr />
 
-      <section className="game-modes">
+      <section className={styles.gameModes}> {/* Apply class for grid */}
         <h2>&#9642; Game Modes</h2>
 
         {/* Duel Mode */}
-        <div className="mode-card">
+        <div className={styles.modeCard}> {/* Apply class for card styling */}
           <h3>1. Duel Mode (1 vs. 1)</h3>
           <ul>
             <li>**Players:** 2</li>
@@ -102,7 +103,7 @@ export default function QuarterPongRulesPage() {
         </div>
 
         {/* Triad Mode */}
-        <div className="mode-card">
+        <div className={styles.modeCard}>
           <h3>2. Triad Mode (3 Players)</h3>
           <ul>
             <li>**Players:** 3</li>
@@ -116,7 +117,7 @@ export default function QuarterPongRulesPage() {
         </div>
 
         {/* Party Mode */}
-        <div className="mode-card">
+        <div className={styles.modeCard}>
           <h3>3. Party Mode (4–6 Players)</h3>
           <ul>
             <li>**Players:** 4–6</li>
