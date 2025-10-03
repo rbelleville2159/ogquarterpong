@@ -40,7 +40,7 @@ const SiteFooter: React.FC = () => (
   <footer className={`w-full ${cardBg} border-t border-gray-700 mt-12`}>
     <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
       <p className="text-sm text-gray-400">
-        &copy; {new Date().getFullYear()} Quarter Pong. All rights reserved. | <span className={`${neonAccent}`}>Game Rules Version 2.1</span>
+        &copy; {new Date().getFullYear()} Quarter Pong. All rights reserved. | <span className={`${neonAccent}`}>Game Rules Version 1.0</span>
       </p>
       <div className="mt-2 space-x-4 text-xs">
         <a href="/privacy" className="text-gray-500 hover:text-white">Privacy Policy</a>
