@@ -2,7 +2,7 @@
 
 export default function QuarterPongRulesPage() {
   return (
-<div classname="quarter-pong-rules">
+<div className="quarter-pong-rules">
     <h1>Quarter Pong – Official Rules & Game Modes</h1>
 
     <hr>
