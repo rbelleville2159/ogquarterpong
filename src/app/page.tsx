@@ -34,11 +34,9 @@ export default function Home() {
       {/* Navigation Links Grid (Updated to lg:grid-cols-3) */}
       <div className="grid w-full max-w-7xl grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-3 lg:text-left">
         
-        {/* 1. Rules Link (Now using Pink Neon Highlight) */}
+        {/* 1. Rules Link (target="_blank" and rel="noopener noreferrer" removed for same-window navigation) */}
         <a href="/rules"
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-pink-500 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.7)]`}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-3xl font-bold ${neonHighlight} group-hover:text-white`}>
             Rules
@@ -51,7 +49,7 @@ export default function Home() {
           </p>
         </a>
 
-        {/* 2. Store Link (Now using Cyan Neon Accent) */}
+        {/* 2. Store Link (Already opens in same window) */}
         <a href="/store"
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-cyan-400 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(45,212,255,0.7)]`}
         >
@@ -66,8 +64,8 @@ export default function Home() {
           </p>
         </a>
 
-        {/* 3. Contact/Community Link (Remains Pink Neon Highlight) */}
-        <a href="/contact"
+        {/* 3. Contact/Community Link (Already opens in same window) */}
+        <a href="/community"
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-pink-500 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.7)]`}
         >
           <h2 className={`mb-3 text-3xl font-bold ${neonHighlight} group-hover:text-white`}>
