@@ -1,4 +1,4 @@
-// app/rules.tsx
+// app/rules/rules.tsx
 
 export default function QuarterPongRulesPage() {
   return (
