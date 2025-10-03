@@ -1,4 +1,6 @@
-// app/rules/page.js
+// src/app/rules/page.js
+
+import React from 'react';
 
 export default function QuarterPongRulesPage() {
   return (
