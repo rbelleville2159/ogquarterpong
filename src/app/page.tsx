@@ -65,7 +65,7 @@ export default function Home() {
         </a>
 
         {/* 3. Contact/Community Link (href points to /community, opens in same window) */}
-        <a href="/community"
+        <a href="/community" // Confirmed to be /community
           className={`group rounded-xl p-6 transition-all duration-300 ${cardBg} border border-gray-700 hover:border-pink-500 hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.7)]`}
         >
           <h2 className={`mb-3 text-3xl font-bold ${neonHighlight} group-hover:text-white`}>
