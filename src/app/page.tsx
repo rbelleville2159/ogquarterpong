@@ -28,7 +28,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Rules
+            Check out the Rules to perhaps the greatest game you'll ever play!
           </p>
         </a>
 
