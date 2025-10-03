@@ -177,7 +177,7 @@ export default function QuarterPongRulesPage() {
               If a player **knocks over the cup or base**, they are <span className={`font-extrabold ${dangerText}`}>immediately eliminated</span>.
             </p>
             <div className="bg-gray-700 p-3 rounded text-gray-300 text-sm italic">
-              <p>The game pauses to reset the cup. Players keep any ball still in hand. Any unaccounted balls are placed on the lid nearest the eliminated player for the restart.</p>
+              <p>The remaining Players advance to the next round and the Person that knocked over the cup is shunned.</p>
             </div>
           </section>
 
